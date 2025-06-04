@@ -3,7 +3,7 @@ from collections import deque
 import heapq
 import random
 
-# Implementación de AVL Tree modificada para manejar strings y contadores
+# Clase AVL implentada (en el original no estaba, para no modificarlo se agrego aca)
 class AVLNode:
     def __init__(self, route, frequency=1):
         self.route = route
@@ -199,7 +199,7 @@ class RouteManager:
 
 class RouteTracker:
     def __init__(self):
-        self.route_frequency_avl = None  # AVL tree para frecuencias de rutas
+        self.route_frequency_avl = None  
         self.node_visits = {}
         self.hashmap = self.create_custom_hashmap()
 
@@ -364,6 +364,9 @@ class OrderSimulator:
                 print(f"Orden #{i+1}: {origin_name} → {dest_name}")
                 print(f"Estado: No se encontró ruta válida")
 
+
+
+# El main, para probar que funciona correctamente
 if __name__ == "__main__":
     # Crear grafo de ejemplo
     g = Graph()
