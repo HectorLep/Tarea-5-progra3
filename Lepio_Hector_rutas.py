@@ -1,3 +1,6 @@
+# Tarea 5 Planificacion de Rutas
+# Para esta tarea se usaron como referencia los códigos de la semana 9 (avl.py) y la semana 11 (edge.py, vertex.py, graph.py).
+
 from graph import Graph
 from collections import deque
 import heapq
